@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deepak Kumar Boddu | Fresher Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+
+    /* Custom CSS (in addition to Tailwind) */
+    .glow-card {
+      box-shadow: 0 0 0 rgba(99,102,241,0.0);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .glow-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 30px rgba(99,102,241,0.25);
+    }
+
+    .gradient-text {
+      background: linear-gradient(90deg, #818cf8, #f472b6);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #6366f1, #8b5cf6);
+      border-radius: 0.75rem;
+      padding: 0.75rem 1.5rem;
+      font-weight: 600;
+      transition: filter 0.2s ease, transform 0.2s ease;
+    }
+    .btn-primary:hover { filter: brightness(1.1); transform: translateY(-1px); }
+
+    .avatar {
+      animation: float 4s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100">
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 bg-slate-950/80 backdrop-blur border-b border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <h1 class="text-xl font-bold">Deepak Kumar Boddu</h1>
+      <nav class="space-x-4 text-sm">
+        <a href="#projects" class="hover:text-white text-slate-300">Projects</a>
+        <a href="#skills" class="hover:text-white text-slate-300">Skills</a>
+        <a href="#contact" class="hover:text-white text-slate-300">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="max-w-6xl mx-auto px-4 py-24 grid md:grid-cols-2 gap-10 items-center">
+    <div>
+      <h2 class="text-4xl md:text-5xl font-extrabold leading-tight">Hi, I'm <span class="gradient-text">Deepak</span> 👋</h2>
+      <p class="mt-4 text-slate-300">A Computer Science graduate & fresher, learning Python for implementing among various LLM models and Computer Vision Projects, Java, Web Development and Data Analytics. I build simple, clean and useful projects.I would love to learn new things from People and Looking forward for New Opportunities in Career.</p>
+      <div class="mt-6 flex gap-4">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#contact" class="px-6 py-3 rounded-xl border border-slate-700 hover:border-slate-500">Contact Me</a>
+      </div>
+    </div>
+    <div class="flex justify-center">
+      <div class="avatar w-64 h-64 rounded-2xl bg-gradient-to-br from-indigo-500/30 to-pink-500/30 flex items-center justify-center text-6xl">👨‍💻</div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="max-w-6xl mx-auto px-4 py-20">
+    <h3 class="text-3xl font-bold mb-8">Skills</h3>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div class="p-5 rounded-2xl bg-slate-900 border border-slate-800">Java</div>
+      <div class="p-5 rounded-2xl bg-slate-900 border border-slate-800">HTML, CSS, JS</div>
+      <div class="p-5 rounded-2xl bg-slate-900 border border-slate-800">React.Js</div>
+      <div class="p-5 rounded-2xl bg-slate-900 border border-slate-800">SQL</div>
+      <div class="p-5 rounded-2xl bg-slate-900 border border-slate-800">Power BI</div>
+      <div class="p-5 rounded-2xl bg-slate-900 border border-slate-800">Git & GitHub</div>
+      <div class="p-5 rounded-2xl bg-slate-900 border border-slate-800">Linux & Windows</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="max-w-6xl mx-auto px-4 py-20">
+    <h3 class="text-3xl font-bold mb-8">Projects</h3>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="glow-card p-6 rounded-2xl bg-slate-900 border border-slate-800">
+        <h4 class="font-semibold text-lg">Deepfake Detection (Mini Project)</h4>
+        <p class="text-slate-400 mt-2 text-sm">Concept project about identifying AI-generated videos.</p>
+      </div>
+      <div class="glow-card p-6 rounded-2xl bg-slate-900 border border-slate-800">
+        <h4 class="font-semibold text-lg">Portfolio Website</h4>
+        <p class="text-slate-400 mt-2 text-sm">This landing page you are seeing right now.</p>
+      </div>
+      <div class="glow-card p-6 rounded-2xl bg-slate-900 border border-slate-800">
+        <h4 class="font-semibold text-lg">Data Dashboard</h4>
+        <p class="text-slate-400 mt-2 text-sm">Basic Power BI dashboard for sample data.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="max-w-6xl mx-auto px-4 py-20">
+    <h3 class="text-3xl font-bold mb-8">Contact</h3>
+    <div class="max-w-xl">
+      <p class="text-slate-300 mb-4">Want to talk or refer me for a job/internship?</p>
+      <div class="glow-card p-6 rounded-2xl bg-slate-900 border border-slate-800">
+        <p>Email: <span class="text-indigo-400">deepu85198@gmail.com</span></p>
+        <p class="mt-2">GitHub: <span class="text-indigo-400">github.com/starboylimitless</span></p>
+        <p class="mt-2">LinkedIn: <span class="text-indigo-400">linkedin.com/in/deepakkumarboddu</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 py-6 text-center text-slate-400 text-sm">
+      © 2026 Deepak Kumar Boddu. Built as a fresher portfolio.
+    </div>
+  </footer>
+  <!-- Scroll To Top Button -->
+<button id="scrollTopBtn"
+  class="hidden fixed bottom-6 right-6 p-3 rounded-full bg-indigo-600 hover:bg-indigo-500 shadow-lg">
+  ⬆️
+</button>
+<script>
+  console.log("JS Loaded");
+
+  // ===== Smooth scroll =====
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute("href"))
+        .scrollIntoView({ behavior: "smooth" });
+    });
+  });
+
+  // ===== Scroll to top button =====
+  const scrollBtn = document.getElementById("scrollTopBtn");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      scrollBtn.classList.remove("hidden");
+    } else {
+      scrollBtn.classList.add("hidden");
+    }
+  });
+
+  scrollBtn.onclick = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  // ===== Typing effect =====
+  const text = "A CS Graduate | Java | Web | Data Analytics";
+  let index = 0;
+  const typingEl = document.createElement("p");
+  typingEl.className = "mt-4 text-indigo-400 font-medium";
+  document.querySelector("h2").after(typingEl);
+
+  function typeEffect() {
+    if (index < text.length) {
+      typingEl.textContent += text.charAt(index);
+      index++;
+      setTimeout(typeEffect, 70);
+    }
+  }
+  typeEffect();
+
+  // ===== Project filtering =====
+  const projects = document.querySelectorAll("#projects .glow-card");
+
+  const filterBar = document.createElement("div");
+  filterBar.className = "mb-6 flex gap-4";
+  filterBar.innerHTML = `
+    <button class="filterBtn btn-primary" data-type="all">All</button>
+    <button class="filterBtn px-4 py-2 border rounded-lg" data-type="web">Web</button>
+    <button class="filterBtn px-4 py-2 border rounded-lg" data-type="data">Data</button>
+    <button class="filterBtn px-4 py-2 border rounded-lg" data-type="ml">ML</button>
+  `;
+  document.querySelector("#projects h3").after(filterBar);
+
+  const tags = ["ml", "web", "data"];
+
+  projects.forEach((p, i) => p.dataset.type = tags[i] || "web");
+
+  document.querySelectorAll(".filterBtn").forEach(btn => {
+    btn.onclick = () => {
+      const type = btn.dataset.type;
+      projects.forEach(p => {
+        if (type === "all" || p.dataset.type === type) {
+          p.style.display = "block";
+        } else {
+          p.style.display = "none";
+        }
+      });
+    };
+  });
+
+  // ===== Reveal animation =====
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.transform = "translateY(0)";
+        entry.target.style.opacity = "1";
+      }
+    });
+  });
+
+  document.querySelectorAll("section").forEach(sec => {
+    sec.style.transform = "translateY(30px)";
+    sec.style.opacity = "0";
+    sec.style.transition = "0.6s ease";
+    observer.observe(sec);
+  });
+</script>
+</body>
+</html>
